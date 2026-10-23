@@ -1,7 +1,7 @@
 #import "@preview/elsearticle:3.1.0": *
 
 #show: elsearticle.with(
-  title: "Stepping Stone or Exit Path? Training the Long-Term Unemployed in Denmark, and What It Means for Lithuania",
+  title: "Stepping Stone or Exit Path? Training the Long-Term Unemployed in Denmark",
   authors: (
     (name: [Aidas Kriščiūnas], affiliations: ("a",), corresponding: true, email: "aidas.krisciunas@evaf.stud.vu.lt"),
     (name: [Jokūbas Narvydas], affiliations: ("a",)),
