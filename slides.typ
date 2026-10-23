@@ -108,13 +108,13 @@ Can a year of intensive support move the hardest-to-place claimants into work?
 
 == Participation and employment
 
-#align(center)[#image("figures/fig1_almp_employment.png", width: 74%)]
+#align(center)[#image("figures/hi/fig1_almp_employment.png", width: 78%)]
 
 #align(center)[#text(size: 0.8em)[Job-training and classroom-training take-up rises for the treated, and so does employment.]]
 
 == Employment without benefits
 
-#align(center)[#image("figures/fig2b_employment_no_benefit.png", width: 70%)]
+#align(center)[#image("figures/hi/fig2b_employment_no_benefit.png", width: 76%)]
 
 #align(center)[#text(size: 0.8em)[A peak near 2 percentage points at about two years, then a return to zero by year four.]]
 
@@ -123,7 +123,7 @@ Can a year of intensive support move the hardest-to-place claimants into work?
 #grid(
   columns: (1fr, 1fr),
   gutter: 1.2em,
-  align(center)[#image("figures/fig2c_work_hours.png", width: 100%)],
+  align(center)[#image("figures/hi/fig2c_work_hours.png", width: 100%)],
   align(left + horizon)[
     #text(size: 0.9em)[
       *Modest, temporary gains*
@@ -138,7 +138,7 @@ Can a year of intensive support move the hardest-to-place claimants into work?
 
 == The unintended channel
 
-#align(center)[#image("figures/fig2d_disability_pension.png", width: 70%)]
+#align(center)[#image("figures/hi/fig2d_disability_pension.png", width: 74%)]
 
 #align(center)[#text(size: 0.8em)[Disability pension take-up rises about 3 percentage points within three years, from 6 to 9 percent.]]
 
@@ -147,8 +147,8 @@ Can a year of intensive support move the hardest-to-place claimants into work?
 #grid(
   columns: (1fr, 1fr),
   gutter: 1em,
-  align(center)[#image("figures/fig3a_emp_by_prev_work.png", width: 100%)],
-  align(center)[#image("figures/fig3b_dp_by_prev_work.png", width: 100%)],
+  align(center)[#image("figures/hi/fig3a_emp_by_prev_work.png", width: 100%)],
+  align(center)[#image("figures/hi/fig3b_dp_by_prev_work.png", width: 100%)],
 )
 
 #align(center)[#text(size: 0.8em)[Left: employment. Right: disability pension. Claimants with no recent work gain little employment and exit more.]]
