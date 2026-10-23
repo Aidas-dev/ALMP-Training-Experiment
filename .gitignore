@@ -1,0 +1,4 @@
+iza_raw.txt
+iza_clean.txt
+*.aux
+*.log
