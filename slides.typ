@@ -15,7 +15,87 @@
 #set text(size: 18pt)
 #show raw: set text(size: 14pt)
 
-#title-slide(
+// Authors of the paper the talk presents, shown on the cover with their portraits.
+#let paper-authors = (
+  (
+    name: "Jacob Nielsen Arendt",
+    role: "Rockwool Foundation",
+    photo: "figures/authors/arendt_sq.png",
+  ),
+  (
+    name: "Iben Bolvig",
+    role: "VIVE",
+    photo: "figures/authors/bolvig_sq.png",
+  ),
+)
+
+#let portrait(photo, size) = box(
+  width: size,
+  height: size,
+  clip: true,
+  radius: 50%,
+  stroke: 0.4pt + luma(205),
+  image(photo, width: size, height: size, fit: "cover"),
+)
+
+#let author-cards(diameter: 3.8em) = grid(
+  columns: (auto, auto),
+  column-gutter: 2.6em,
+  align: left + horizon,
+  ..paper-authors.map(author => grid(
+    columns: (auto, auto),
+    column-gutter: 0.8em,
+    align: left + horizon,
+    portrait(author.photo, diameter),
+    [
+      #text(size: 0.85em, weight: "medium")[#author.name] \
+      #text(size: 0.7em, fill: luma(110))[#author.role]
+    ],
+  )),
+)
+
+// Metropolis title slide, extended with the paper authors above the presenter names.
+#let cover(config: (:), extra: none, ..args) = touying-slide-wrapper(self => {
+  self = utils.merge-dicts(
+    self,
+    config-common(freeze-slide-counter: true),
+    config-page(fill: self.colors.neutral-lightest),
+    config,
+  )
+  let info = self.info + args.named()
+  touying-slide(self: self, {
+    set text(fill: self.colors.neutral-darkest)
+    set align(horizon)
+    block(width: 100%, inset: 1.6em, {
+      text(size: 1.3em, weight: "medium", info.title)
+      linebreak()
+      text(size: 0.9em, info.subtitle)
+      line(length: 100%, stroke: .05em + self.colors.primary)
+      v(0.7em)
+      text(size: 0.62em, fill: luma(120))[PAPER AUTHORS]
+      v(0.4em)
+      author-cards()
+      v(0.9em)
+      block(spacing: 1em, {
+        set text(size: .8em)
+        if info.author != none {
+          block(spacing: 1em, info.author)
+        }
+        if info.date != none {
+          block(spacing: 1em, utils.display-info-date(self))
+        }
+        if info.institution != none {
+          block(spacing: 1em, info.institution)
+        }
+        if extra != none {
+          block(spacing: 1em, extra)
+        }
+      })
+    })
+  })
+})
+
+#cover(
   extra: [Arendt and Bolvig (2026), IZA Discussion Paper No. 18618],
 )
 
