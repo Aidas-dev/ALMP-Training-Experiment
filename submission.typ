@@ -3,14 +3,13 @@
 #show: elsearticle.with(
   title: "Stepping Stone or Exit Path? Training the Long-Term Unemployed in Denmark",
   authors: (
-    (name: [Aidas Kriščiūnas], affiliations: ("a",), corresponding: true, email: "aidas.krisciunas@evaf.stud.vu.lt"),
+    (name: [Aidas Kriščiūnas], affiliations: ("a",)),
     (name: [Jokūbas Narvydas], affiliations: ("a",)),
     (name: [Domas Pitrėnas], affiliations: ("a",)),
   ),
   affiliations: (
     "a": [Applied Microeconomics: Group Assignment],
   ),
-  journal: "Applied Microeconomics: Group Assignment",
   keywords: ("long-term unemployment", "active labour market policy", "disability pension", "randomised controlled trial", "Lithuania"),
   paper: "a4",
   format: "preprint",
@@ -19,6 +18,8 @@
 // Slightly tighter body text so the written submission fits its target length.
 #set text(size: 10.5pt)
 #show heading: set block(above: 1.2em, below: 0.55em)
+
+#align(center, text(size: 9pt, "aidas.krisciunas@evaf.stud.vu.lt · jokubas.narvydas@evaf.stud.vu.lt · domas.pitrenas@evaf.stud.vu.lt"))
 
 = Policy summary
 
