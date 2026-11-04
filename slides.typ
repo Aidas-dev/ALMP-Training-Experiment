@@ -71,21 +71,25 @@
       linebreak()
       text(size: 0.9em, info.subtitle)
       line(length: 100%, stroke: .05em + self.colors.primary)
-      v(0.7em)
-      text(size: 0.62em, fill: luma(120))[PAPER AUTHORS]
-      v(0.4em)
+      v(0.55em)
+      text(size: 0.62em, fill: luma(120))[ORIGINAL PAPER AUTHORS]
+      v(0.35em)
       author-cards()
-      v(0.9em)
-      block(spacing: 1em, {
+      v(0.7em)
+      text(size: 0.62em, fill: luma(120))[PRESENTED BY]
+      v(0.25em)
+      text(size: 0.85em, weight: "medium", info.author)
+      v(0.5em)
+      block(spacing: 0.8em, {
         set text(size: .8em)
-        if info.author != none {
-          block(spacing: 1em, [Presented by #info.author])
-        }
         if info.date != none {
-          block(spacing: 1em, utils.display-info-date(self))
+          utils.display-info-date(self)
+        }
+        if info.date != none and info.institution != none {
+          [ · ]
         }
         if info.institution != none {
-          block(spacing: 1em, info.institution)
+          info.institution
         }
         if extra != none {
           block(spacing: 1em, extra)
