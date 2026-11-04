@@ -79,7 +79,7 @@
       block(spacing: 1em, {
         set text(size: .8em)
         if info.author != none {
-          block(spacing: 1em, info.author)
+          block(spacing: 1em, [Presented by #info.author])
         }
         if info.date != none {
           block(spacing: 1em, utils.display-info-date(self))
@@ -261,13 +261,13 @@ Can a year of intensive support move the hardest-to-place claimants into work?
     [Net societal benefit], [−1,367],
     [Net societal benefit, with deadweight loss], [−1,836],
     [Fiscal impact], [−937],
-    [MVPF, overall], [−0.43],
+    [MVPF, overall], [−0.46],
   )
 ]
 
 #v(0.6em)
 
-#align(center)[#text(size: 0.8em)[Immigrant subgroup: MVPF about 0.72, mostly through higher pension income, and at fiscal cost.]]
+#align(center)[#text(size: 0.8em)[Immigrant subgroup: MVPF about 0.72. Extra pension income near USD 4,300 is nearly cancelled by the welfare they forgo, near USD 4,200, and the net budget cost is near USD 4,800.]]
 
 == Lithuania has the same target group
 
