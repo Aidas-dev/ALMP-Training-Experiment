@@ -237,6 +237,17 @@ Can a year of intensive support move the hardest-to-place claimants into work?
 
 #align(center)[#text(size: 0.8em)[Left: employment. Right: disability pension. Claimants with no recent work gain little employment and exit more.]]
 
+== Who gains and who exits, by origin
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 1em,
+  align(center)[#image("figures/hi/fig3c_emp_by_immigrant.png", width: 100%)],
+  align(center)[#image("figures/hi/fig3d_dp_by_immigrant.png", width: 100%)],
+)
+
+#align(center)[#text(size: 0.8em)[Left: employment without benefits. Right: disability pension. Black is Danish-born, red is immigrants. Employment gains sit with the Danish-born; the pension exit is roughly twice as large for immigrants, near 5 percentage points at its peak.]]
+
 == Reading the pattern
 
 - Employment gains concentrate among Danish-born claimants and those with recent work experience.
@@ -269,10 +280,6 @@ Can a year of intensive support move the hardest-to-place claimants into work?
   )
 ]
 
-#v(0.6em)
-
-#align(center)[#text(size: 0.8em)[Immigrant subgroup: MVPF about 0.72. Extra pension income near USD 4,300 is nearly cancelled by the welfare they forgo, near USD 4,200, and the net budget cost is near USD 4,800.]]
-
 == Lithuania has the same target group
 
 - Long-term unemployment reached 2.5 percent of the labour force in 2025, up from 2.3 percent, and long-term claimants are 36 percent of all unemployed (Eurostat).
@@ -289,7 +296,7 @@ Can a year of intensive support move the hardest-to-place claimants into work?
 - Since January 2024 the Agency for the Rights of Persons with Disabilities assesses a participation level, weighting medical criteria at 60 percent and individual needs at 40 percent.
 - A treating physician refers, and municipalities and Sodra pay. No rule requires proof that activation was attempted.
 - Average lost-capacity pension: EUR 420 per month in 2025. Average social assistance: about EUR 148 in 2024.
-- That premium is roughly 2.2 to 2.8 times social assistance. In Denmark the comparable ratio was about 1.5.
+- That premium is roughly 2.8 times social assistance. In Denmark the comparable ratio was about 1.5.
 
 #v(0.4em)
 
@@ -314,7 +321,7 @@ Can a year of intensive support move the hardest-to-place claimants into work?
     - Randomise, and pre-register the analysis.
     - Treat disability applications as an outcome.
     - Do not promise savings: the Danish net societal benefit is negative.
-    - The case rests on reaching a group current policy misses.
+    - Judge it by who it reaches, not by savings.
   ],
 )
 
@@ -325,10 +332,6 @@ Three findings travel.
 - Activation for the hardest-to-place raises employment for about three years, and the gain fades.
 - The same programme raises permanent disability exits, because it produces the documentation those cases need.
 - Where disability pay sits far above social assistance, and where assessment does not require proof of activation, the exit channel should be expected to dominate.
-
-#v(0.6em)
-
-#align(center)[#text(size: 0.95em)[Lithuania sits on both of those conditions.]]
 
 == Thank you
 
